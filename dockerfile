@@ -1,2 +1,2 @@
-FROM guruprasanna30/webapp
+FROM tomcat:9
 ADD ./test /var/www/html/test
