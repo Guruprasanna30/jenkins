@@ -1,3 +1,3 @@
 FROM httpd:latest
-ADD ./test /var/www/html/test
+ADD ./test /usr/local/apache2/htdocs
 EXPOSE 80
