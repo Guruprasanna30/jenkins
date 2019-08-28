@@ -1,5 +1,4 @@
-FROM httpd:latest
-WORKDIR /tmp/work
-ADD ./Tennis /tmp/work
-ADD ./test /usr/local/apache2/htdocs
-EXPOSE 80
+FROM tomcat:latest
+WORKDIR /usr/local/tomcat
+ADD ./Tennis /usr/local/tomcat/webapps
+EXPOSE 8080
